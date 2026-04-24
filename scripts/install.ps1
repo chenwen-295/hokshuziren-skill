@@ -75,7 +75,7 @@ $files = @(
     @{Url="$Repo/DockerDesktopInstaller.exe"; Name="DockerDesktopInstaller.exe"},
     @{Url="$Repo/Voicebox_0.4.5_x64-setup.exe"; Name="Voicebox_0.4.5_x64-setup.exe"},
     @{Url="$Repo/Duix.Avatar-1.0.6-lite-setup.exe"; Name="Duix.Avatar-1.0.6-lite-setup.exe"},
-    @{Url="$Repo/shuziren_deploy_video.mp4"; Name="数字人部署视频.mp4"}
+    @{Url="$Repo/default.mp4"; Name="数字人部署视频.mp4"}
 )
 
 foreach ($f in $files) {

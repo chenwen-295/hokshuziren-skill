@@ -79,3 +79,29 @@
 - Duix.Avatar: https://github.com/duixcom/duix.avatar
 - Voicebox: https://github.com/jamiepine/voicebox (MIT license)
 - Docker Desktop: https://www.docker.com/products/docker-desktop
+
+## 龙虾（其他 OpenClaw）使用方法
+
+### 方式一：自动安装（推荐）
+在 OpenClaw 中执行：
+`
+openclaw skill install https://github.com/chenwen-295/hokshuziren-skill
+`
+然后对龙虾说「数字人部署」即可触发。
+
+### 方式二：手动安装
+1. 克隆仓库到 skills 目录：
+`powershell
+cd ~/.openclaw-autoclaw/skills
+git clone https://github.com/chenwen-295/hokshuziren-skill.git
+`
+2. 重启 OpenClaw Gateway
+3. 对龙虾说「数字人部署」
+
+### 执行流程
+龙虾读取 SKILL.md 后，以管理员身份运行 scripts/install.ps1，脚本会：
+1. 自动从 GitHub Release v1.0 下载3个安装包+部署视频到桌面
+2. 检测 GPU/磁盘/驱动
+3. 全自动安装 + 配置 + 重启
+4. 重启后自动拉 Docker 镜像 + 启动服务
+5. 自检输出状态报告
